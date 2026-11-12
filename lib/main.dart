@@ -156,6 +156,7 @@ class _TriviaShowdownScreenState extends State<TriviaShowdownScreen> {
     }
 
     try {
+      //await Future.delayed(const Duration(seconds: 15));
       final questions = await _triviaService.fetchQuestions();
 
       if (!mounted || roundId != _roundId) return;
